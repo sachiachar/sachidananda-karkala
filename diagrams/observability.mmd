@@ -1,0 +1,11 @@
+flowchart LR
+  edge["Edge network<br/>log streams"]
+  buf["Buffering layer"]
+  cluster[("Columnar analytics cluster<br/>sharded · replicated")]
+  hot[("Hot · NVMe")]
+  cold[("Cold · regional object store")]
+  dr[("Cross-region DR snapshots")]
+  q["Customer queries (read-only)"]
+  edge --> buf --> cluster --> hot --> cold
+  cluster -.snapshots.-> dr
+  q --> cluster

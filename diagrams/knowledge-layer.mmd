@@ -1,0 +1,13 @@
+flowchart LR
+  sources["Source docs<br/>customer history · findings"]
+  ingest["Ingest"]
+  kg[("Temporal knowledge graph")]
+  probes["Quality probes<br/>factual · relational · negative"]
+  score["ConfidenceReport"]
+  rbac["Per-tool RBAC"]
+  consumers["Agents / analysts / UIs"]
+  sources --> ingest --> kg
+  kg --> probes --> score
+  consumers -.governed by.-> rbac
+  rbac --> kg
+  score -.gates.-> consumers

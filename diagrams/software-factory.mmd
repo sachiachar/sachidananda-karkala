@@ -1,0 +1,13 @@
+flowchart LR
+  epic["Business epic"]
+  subgraph factory["Specialised agents"]
+    pm["Program mgmt"]
+    pdm["Product spec"]
+    qa["Testing"]
+    re["Runtime engineering"]
+  end
+  plan["Deployment plan<br/>(markdown)"]
+  hitl{{"Human approval"}}
+  gitops["GitOps repo & reconciler"]
+  env["Governed environments"]
+  epic --> pm --> pdm --> qa --> re --> plan --> hitl --> gitops --> env

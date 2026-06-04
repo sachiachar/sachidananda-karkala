@@ -1,0 +1,11 @@
+flowchart LR
+  caller["Caller<br/>(user / agent / service)"]
+  idp["Identity Provider"]
+  enf["In-process authorisation<br/>per-tool RBAC"]
+  agent["Agent backend tools"]
+  audit[("Audit log")]
+  caller --> idp
+  caller --> enf
+  enf -.validates.-> idp
+  enf --> agent
+  enf -.logs.-> audit

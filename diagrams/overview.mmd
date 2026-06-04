@@ -1,0 +1,24 @@
+flowchart LR
+  user["Enterprise users<br/>analysts · operators · executives"]
+  subgraph gw["Conversational Gateway"]
+    chat["Chat + workflow registry"]
+  end
+  subgraph agents["Autonomous Agent Platforms"]
+    ra["Research-agent pipeline"]
+    sf["AI-native software factory"]
+  end
+  subgraph shared["Shared Enterprise Services"]
+    inf["Shared inference platform"]
+    kg["Knowledge graph + quality scoring"]
+    iam["AI identity & RBAC"]
+    data["Petabyte log analytics"]
+  end
+  user --> chat
+  chat --> agents
+  agents --> inf
+  agents --> kg
+  agents -.governed by.-> iam
+  inf -.governed by.-> iam
+  kg -.governed by.-> iam
+  classDef sub fill:#11151a,stroke:#30363d,color:#e6edf3
+  class gw,agents,shared sub

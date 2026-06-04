@@ -38,6 +38,8 @@ An **autonomous research-agent platform** designed to produce structured analysi
 
 All three run on shared enterprise services: a knowledge graph that scores its own quality, an identity layer that's pluggable and audit-friendly, and a petabyte-scale data platform.
 
+![How the platforms compose](images/overview.png)
+
 ---
 
 ## Reference Architectures
@@ -66,6 +68,8 @@ Quality is treated as a first-class signal. Before deeper analysis runs, the pla
 
 **Stack:** Multi-agent orchestration · Durable workflow runtime · Knowledge graph · GitOps / Argo CD · Kubernetes
 
+![Autonomous Research-Agent Platform architecture](images/research-agent-platform.png)
+
 ---
 
 ### 2. Shared Enterprise Inference Platform
@@ -91,6 +95,8 @@ Releases are guarded by automated capacity validation: a deployment is blocked b
 - **Safe by default** — deployments blocked automatically if they would over-commit GPU memory
 
 **Stack:** Enterprise AI platform · OIDC / SSO · AI security perimeter · GPU capacity governance · Kubernetes
+
+![Shared Enterprise Inference Platform architecture](images/shared-inference-platform.png)
 
 ---
 
@@ -118,6 +124,8 @@ The agent runtime is shared and pluggable: any agent can use a cloud-hosted mode
 
 **Stack:** Multi-agent SDLC · GitOps / Argo CD · Approval gates · Distributed tracing · Kubernetes
 
+![AI-Native Software Delivery Factory architecture](images/software-factory.png)
+
 ---
 
 ### 4. Enterprise Knowledge Layer with Measurable Quality
@@ -144,6 +152,8 @@ That score is the input to other systems' trust decisions: the autonomous agent 
 
 **Stack:** Knowledge graph · Hallucination scoring · RBAC & JWT · Temporal model · Kubernetes
 
+![Enterprise Knowledge Layer architecture](images/knowledge-layer.png)
+
 ---
 
 ### 5. AI Identity & Access for Tool-Using Agents
@@ -167,6 +177,8 @@ Two artefacts. A **self-hosted IdP** deployment that issues tokens, manages user
 - **Auditable by design** — every authorisation decision is loggable and explainable
 
 **Stack:** AI identity layer · Per-tool RBAC · Role inheritance · SSO-agnostic · Kubernetes
+
+![AI Identity & Access architecture](images/identity-access.png)
 
 ---
 
@@ -194,6 +206,8 @@ External access to sensitive systems is locked to a read-only allowlist with ide
 
 **Stack:** AI gateway · Pluggable workflows · Read-only safe access · Standard LLM protocol · Kubernetes
 
+![Conversational Gateway architecture](images/conversational-gateway.png)
+
 ---
 
 ### 7. Petabyte-Scale Observability — Reference Architecture
@@ -217,6 +231,8 @@ Columnar storage with **10–12× compression**, sharded for parallel ingest and
 - **Documented operations** — runbooks for DR, upgrades, credential rotation, troubleshooting
 
 **Stack:** Columnar analytics · Tiered storage · Cross-region DR · Kubernetes
+
+![Petabyte-Scale Observability architecture](images/observability.png)
 
 ---
 

@@ -1,0 +1,8 @@
+flowchart LR
+  callers["Enterprise tools<br/>agents · IDE plugins · UIs"]
+  edge["AI perimeter<br/>OIDC · prompt-injection filtering"]
+  endpoint["Single inference endpoint<br/>industry-standard protocol"]
+  backend["Swappable model backend"]
+  gov["Identity-linked usage<br/>cost & audit"]
+  callers --> edge --> endpoint --> backend
+  edge -.attributes.-> gov

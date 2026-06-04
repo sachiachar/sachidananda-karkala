@@ -1,0 +1,12 @@
+flowchart LR
+  inputs["Customer inputs<br/>+ prior engagement history"]
+  plan["Planner<br/>(knowledge-quality gated)"]
+  hitl{{"Human-in-the-loop<br/>gap-fill approval"}}
+  exec["Specialist analysts<br/>(synthesised at runtime)"]
+  review["Stakeholder-perspective<br/>reviewers"]
+  brief["Briefing & deliverable"]
+  inputs --> plan
+  plan -- gaps --> hitl --> plan
+  plan --> exec --> review
+  review -- replan --> plan
+  review --> brief

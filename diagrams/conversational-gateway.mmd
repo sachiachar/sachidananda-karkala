@@ -1,0 +1,9 @@
+flowchart LR
+  emp["Employee"]
+  gw["Gateway<br/>chat + workflow registry"]
+  llm["Enterprise-approved LLM"]
+  reg["Pluggable workflow agents"]
+  sys["Internal systems<br/>(read-only, identity-correct)"]
+  emp --> gw
+  gw --> llm
+  gw --> reg --> sys
