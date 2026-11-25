@@ -4,6 +4,8 @@
 
 **Agentic AI · Tamper-Evidence · Multi-Tenant API**
 
+🏆 **Winner, [SuperAI 2026 NEXT Hackathon](https://lnkd.in/p/gCCipJW7)** · [Live app](https://vericlaims.vercel.app) · [Demo video](https://youtu.be/UMt70Mh64fQ)
+
 Verification-as-a-service for e-commerce returns and insurance cover and claims. A customer films the item; an agent swarm proves the video is genuine, checks it is the right product, and grades its condition — before a refund is paid, a policy is issued, or a claim is settled.
 
 ## The Problem

@@ -1,0 +1,78 @@
+# Sachidananda Karkala
+
+> Sachidananda Karkala is an enterprise AI platform architect based in Singapore, with more than 26 years of experience in enterprise architecture across media, telecom and cloud. He designs governed AI platforms and builds them end to end. His VeriClaims AI won the SuperAI 2026 NEXT Hackathon.
+
+Last updated: 2026-11-25
+Website: https://sachikarkala.online/
+Contact: sachi.achar@gmail.com
+Portfolio source and case studies: https://github.com/sachiachar/sachidananda-karkala
+
+## Current role
+- Enterprise Architect, Advanced Technology Group, Akamai Technologies (February 2022 – present). Leads AI innovation and architecture blueprints for enterprise customers; advised 20+ strategic media and retail customers across Asia-Pacific.
+
+## AI systems built in 2026
+- [VeriClaims AI](https://vericlaims.vercel.app): AI agent swarm that verifies returns, insurance cover and claims from tamper-evident video. Winner, SuperAI 2026 NEXT Hackathon.
+- [Anvaya](https://anvaya-saathi.web.app): Governed multi-agent AI companion that hands a family's financial records over safely.
+- [InsideEdge](https://github.com/sachiachar/sachidananda-karkala/blob/main/builds/insidedge.md): AI-authored, multilingual lobby TV channel composed live by a crew of agents.
+- [Vouch](https://github.com/sachiachar/sachidananda-karkala/blob/main/builds/vouch.md): Professional network where standing is derived only from records other people signed.
+- [Hackathon Judging Platform](https://github.com/sachiachar/sachidananda-karkala/blob/main/builds/hackathon-judging.md): Judging platform where AI evaluation is advisory and cannot write scores.
+- [TribeRoots](https://github.com/sachiachar/sachidananda-karkala/blob/main/builds/triberoots.md): Multi-tenant community platform with server-side roles, migrated live to Postgres.
+- [Usra](https://github.com/sachiachar/sachidananda-karkala/blob/main/builds/usra.md): Privacy-first household digital twin with layered AI safety checks.
+
+## Reference architectures
+- [Shared Enterprise Inference Platform](https://github.com/sachiachar/sachidananda-karkala/blob/main/architectures/shared-inference-platform.md): one governed, cost-attributed AI endpoint replacing per-team GPU sprawl.
+- [AI Identity & Access](https://github.com/sachiachar/sachidananda-karkala/blob/main/architectures/identity-access.md): per-tool, per-role authorisation for AI agents.
+- [Enterprise Knowledge Layer](https://github.com/sachiachar/sachidananda-karkala/blob/main/architectures/knowledge-layer.md): a knowledge graph that scores its own quality.
+- [Research-Agent Platform](https://github.com/sachiachar/sachidananda-karkala/blob/main/architectures/research-agent-platform.md): plan, execute, evaluate and replan with human gap-fill.
+- [AI-Native Software Factory](https://github.com/sachiachar/sachidananda-karkala/blob/main/architectures/software-factory.md): specialised agents from epic to governed deployment.
+- [Conversational Gateway](https://github.com/sachiachar/sachidananda-karkala/blob/main/architectures/conversational-gateway.md): one chat surface for conversation and sanctioned automations.
+
+## Career
+- Akamai Technologies — Enterprise Architect, Advanced Technology Group (2022 – present)
+- MediaKind / Ericsson — End-to-End Solution Architect; Senior Consultant and Engagement Lead, TV & Media; Senior Solution Architect (2013 – 2022)
+- Huawei Technologies India — Senior Solution Architect and Presales Head; System Architect; Technical Lead, Intelligent Network (2002 – 2013)
+- Axes Technologies / IpGen (now Tech Mahindra) — Software Engineer, H.248 protocol stack and mobile softswitch (2000 – 2002)
+
+## Education and credentials
+- Bachelor of Engineering, Computer Science — NMAM Institute of Technology, Nitte; First Rank in the university
+- Post-graduate programme in AI & Machine Learning — The University of Texas at Austin, McCombs School of Business (2019–20)
+- AI: Strategies for Leading Business Transformation — Kellogg School of Management (2020)
+- Deep Learning Specialization and TensorFlow Developer Certificate — DeepLearning.AI
+- Modular Programme in Data Science — IIM Bangalore
+
+## Frequently asked questions
+### Who is Sachidananda Karkala?
+Sachidananda Karkala is an enterprise AI platform architect based in Singapore. He has more than 26 years of experience in enterprise architecture across media, telecom and cloud. He designs governed AI platforms and builds them end to end.
+
+### What does Sachidananda Karkala specialise in?
+Sachidananda Karkala specialises in governed enterprise AI: shared inference platforms, multi-agent systems, measurable knowledge quality, and identity and access control for AI agents. He also designs large-scale video, CDN and OSS/BSS architectures for media and telecom companies.
+
+### What is Sachidananda Karkala's current role?
+Since February 2022, Sachidananda Karkala has been an Enterprise Architect in the Advanced Technology Group at Akamai Technologies. He leads AI innovation and architecture blueprints for enterprise customers, and has advised more than 20 strategic media and retail customers across Asia-Pacific.
+
+### What is VeriClaims AI?
+VeriClaims AI is a verification service built by Sachidananda Karkala that won the SuperAI 2026 NEXT Hackathon. A customer films an item; an AI agent swarm checks the video is genuine, the product is correct, and its condition, before a refund, policy or claim is approved.
+
+### What AI systems has Sachidananda Karkala built?
+In 2026, Sachidananda Karkala built seven AI systems end to end: VeriClaims AI, Anvaya, InsideEdge, Vouch, a hackathon judging platform, TribeRoots and Usra. They use Claude, Gemini, AWS, Google Cloud and Vercel, in TypeScript, Python and Rust.
+
+### How does Sachidananda Karkala approach governed AI?
+Sachidananda Karkala designs AI so that people decide and systems can be audited. Rules are enforced in databases, cryptography and permissions rather than prompts. Every agent has a deterministic fallback, and AI evaluations are advisory, with no permission to write final decisions.
+
+### Which industries has Sachidananda Karkala worked in?
+Sachidananda Karkala has worked mainly in media, telecommunications and cloud services. His work covers video platforms, content delivery networks, cable and telco back-office systems, service delivery platforms, insurance and e-commerce verification, and AI platforms for enterprises.
+
+### Which companies has Sachidananda Karkala worked for?
+Sachidananda Karkala has worked for Akamai Technologies (2022 to present), MediaKind and Ericsson (2013 to 2022), Huawei Technologies India (2002 to 2013), and Axes Technologies, now part of Tech Mahindra (2000 to 2002).
+
+### What large transformations has Sachidananda Karkala led?
+Sachidananda Karkala was lead solution architect for a large Japanese cable operator's media transformation. The project moved the back office to the cloud and coordinated more than 30 system-integration partners. Products he helped architect earned more than USD 100 million in aggregate revenue.
+
+### What AI qualifications does Sachidananda Karkala hold?
+Sachidananda Karkala completed a post-graduate programme in AI and machine learning at the University of Texas at Austin. He also holds credentials from Kellogg School of Management, DeepLearning.AI and IIM Bangalore. He graduated first in his university in computer science engineering.
+
+### What is Anvaya?
+Anvaya is a governed multi-agent AI companion built by Sachidananda Karkala for the AI Builder Cup 2026. It helps families record accounts, nominees and wishes, and hands them over safely. Fifteen agents run behind one gateway, and two human reviewers approve every release.
+
+### How can I contact Sachidananda Karkala?
+You can contact Sachidananda Karkala by email at sachi.achar@gmail.com. He welcomes conversations about enterprise AI platforms, governed AI agents and large-scale architecture. His project write-ups and architecture diagrams are on GitHub at github.com/sachiachar/sachidananda-karkala.

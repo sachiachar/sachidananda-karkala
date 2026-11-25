@@ -28,6 +28,8 @@ Governed, auditable, cost-aware AI: shared inference, autonomous multi-agent sys
 Working systems, not slideware — from live products to deployed platforms and hackathon MVPs. Each links to a full case study with its architecture.
 
 ### [VeriClaims AI](builds/vericlaims.md) — verification that can't be faked
+🏆 **Winner, [SuperAI 2026 NEXT Hackathon](https://lnkd.in/p/gCCipJW7)**
+
 An agent swarm decides returns, insurance cover and claims on evidence instead of trust. Video is sealed on the device with a hash chain and signature; integrity is always a cryptographic verdict, never an LLM's opinion. A second swarm researches new fraud tactics every night.
 `Claude vision` `AWS Bedrock AgentCore` `Vercel Workflows` `DynamoDB` · **[Live app](https://vericlaims.vercel.app)** · **[Demo video](https://youtu.be/UMt70Mh64fQ)**
 
