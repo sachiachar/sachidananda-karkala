@@ -1,0 +1,21 @@
+flowchart TB
+  cap["Customer films item<br/>hash chain · ECDSA seal on device"]
+  api["Tenant API<br/>returns · cover · claims"]
+  subgraph swarm["Verification swarm"]
+    integ["verify_integrity<br/>(cryptographic, never an LLM)"]
+    vision["assess_item<br/>Claude vision"]
+    risk["customer risk + live fraud KB"]
+    dec["make_decision"]
+  end
+  kb[("Living fraud KB<br/>versioned")]
+  ks["Knowledge + dreaming swarm<br/>Bedrock AgentCore · nightly"]
+  exa{{"Exa web verification"}}
+  cb["HMAC-signed callback<br/>decision + audit trail"]
+  cap --> api --> swarm
+  integ --> dec
+  vision --> dec
+  risk --> dec
+  kb --> risk
+  ks --> kb
+  ks -.verifies.-> exa
+  dec --> cb

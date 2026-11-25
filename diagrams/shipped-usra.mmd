@@ -1,0 +1,19 @@
+flowchart TB
+  subgraph sense["1 · Sense"]
+    direction LR
+    dev["Home devices<br/>one connector per brand"] --> hh["Household layer<br/>consent checked first"]
+  end
+  subgraph think["2 · Think"]
+    direction LR
+    know[("What Usra knows<br/>noticed · told · dreamed<br/>read · learned")] --> ai["AI reasoner<br/>suggests next steps"] --> code["Code forecasts + ranks<br/>most help, least bother"]
+  end
+  subgraph check["3 · Check — each stage stricter"]
+    direction LR
+    rules["Fixed rules"] --> rev["AI reviewer<br/>unclear cases"] --> ppl{{"People decide"}}
+  end
+  subgraph act["4 · Act and learn"]
+    direction LR
+    doit["Ask or act<br/>always undoable"] --> learn["Learn<br/>meaning only, never words"]
+  end
+  sense --> think --> check --> act
+  act -. lessons feed back .-> think

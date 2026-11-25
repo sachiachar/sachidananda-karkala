@@ -1,0 +1,14 @@
+flowchart TB
+  owner["Owner talks to Saathi<br/>voice or text"]
+  gw["Model gateway<br/>budgets · 15 registered agents"]
+  guard{{"Guardian<br/>check · steer · pause · block"}}
+  keep["Owner taps Keep<br/>nothing stored without it"]
+  vault[("Vault<br/>encrypted on the phone")]
+  heir["Heir requests handover"]
+  fraud["Certificate forgery checks<br/>hourly fraud research + dreaming"]
+  rev{{"Two independent reviewers<br/>+ waiting period"}}
+  ans["Cited answers · checklist<br/>draft letters"]
+  owner --> gw --> keep --> vault
+  guard -.oversees.-> gw
+  heir --> fraud --> rev --> vault
+  vault --> ans

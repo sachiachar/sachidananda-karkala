@@ -1,0 +1,18 @@
+flowchart TB
+  spa["React SPA<br/>one sign-in · many communities"]
+  fa["Firebase Auth<br/>identity only"]
+  subgraph api["API tier · Vercel functions"]
+    direction LR
+    tok["Verify token"] --> authz["Resolve role from Postgres<br/>member · community admin · platform admin"] --> pol["Per-collection policy<br/>member · admin · owner · private"]
+  end
+  subgraph neon["Neon Postgres · every read community-scoped"]
+    direction LR
+    core[("Relational core<br/>communities · memberships<br/>payments ledger")]
+    docs[("Document store<br/>long tail of features")]
+    ev[("Normalised tables<br/>events · registrations")]
+  end
+  legacy[("Firestore<br/>chat · audit log<br/>retiring slice by slice")]
+  spa -.sign in.-> fa
+  spa --> api
+  api --> neon
+  api -.not yet migrated.-> legacy

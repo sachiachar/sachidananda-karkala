@@ -1,0 +1,15 @@
+flowchart TB
+  bb["BuilderBase<br/>5 read-only scopes"]
+  mir[("Mirror tables<br/>teams · submissions")]
+  scan["Repo scan<br/>REST only, code never run"]
+  sig["Integrity signals<br/>with evidence"]
+  ai["Claude evaluation<br/>schema-forced · abstains on demo"]
+  aie[("ai_evaluations")]
+  judges{{"Human judges<br/>10 judges in 5 pairs"}}
+  js[("judge_scores<br/>AI has no grant")]
+  res["Results · tie-breaks · awards<br/>audit-logged"]
+  bb --> mir --> scan --> sig
+  mir --> ai --> aie
+  sig -.advisory.-> judges
+  aie -.advisory.-> judges
+  judges --> js --> res
