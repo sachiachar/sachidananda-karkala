@@ -1,0 +1,15 @@
+flowchart TB
+  subgraph fast["Seconds 0–10 · the screen reacts"]
+    direction LR
+    post["t = 0<br/>Employee posts a photo"] --> pitch["~3 s<br/>Reporter pitches it"] --> place["~6 s<br/>Each office's Editor<br/>places it in the rundown"] --> ticker["Ticker line airs<br/>while video renders"]
+  end
+  subgraph render["Seconds 10–60 · production"]
+    direction LR
+    copy["~8 s<br/>Producer writes copy<br/>in each office's language"] --> compose["~2 s warm<br/>Timeline compiled<br/>to an HLS stream"]
+    gate{{"Gatekeeper checks the copy<br/>in parallel with rendering"}}
+  end
+  subgraph air["Under 90 seconds · on air"]
+    direction LR
+    tv["Segment plays on the next slot<br/>Tokyo and Cambridge, each in its own language"]
+  end
+  fast --> render --> air

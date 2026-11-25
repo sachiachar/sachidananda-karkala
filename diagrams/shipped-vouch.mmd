@@ -1,11 +1,15 @@
 flowchart TB
-  b["React SPA<br/>httpOnly session cookie"]
-  cf["CloudFront<br/>one origin · no CORS"]
-  api["Rust API on Lambda<br/>arm64 · ~2 MB binary"]
-  lv["levels.rs<br/>standing derived from<br/>Ed25519-signed records"]
-  db[("Aurora Serverless v2<br/>scales to 0 when idle<br/>private VPC · no NAT<br/>invariants enforced in Postgres")]
-  s3[("S3 media<br/>browser uploads directly")]
-  cog["Cognito<br/>email code only"]
-  b --> cf --> api --> lv --> db
-  b -.presigned PUT.-> s3
-  b -.sign-in.-> cog
+  subgraph edge["One origin"]
+    direction LR
+    b["React SPA<br/>httpOnly session cookie"] --> cf["CloudFront<br/>no CORS anywhere"] --> api["Rust API on Lambda<br/>arm64 · ~2 MB binary"]
+  end
+  subgraph core["Private VPC · no NAT"]
+    direction LR
+    lv["levels.rs<br/>standing derived from<br/>Ed25519-signed records"] --> db[("Aurora Serverless v2<br/>scales to 0 when idle<br/>invariants enforced in Postgres")]
+  end
+  subgraph side["Outside the request path"]
+    direction LR
+    s3[("S3 media<br/>browser uploads directly")] ~~~ cog["Cognito<br/>email code only"]
+  end
+  edge --> core
+  edge -.-> side

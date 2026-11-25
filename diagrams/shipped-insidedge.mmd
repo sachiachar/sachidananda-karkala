@@ -1,0 +1,17 @@
+flowchart TB
+  subgraph sources["Sources"]
+    direction LR
+    blog["Company blog"] ~~~ learn["Learning catalogue"] ~~~ inc["Reliability feed"] ~~~ emp["Employee posts<br/>On-the-TV"]
+  end
+  subgraph crew["AI crew · structured output"]
+    direction LR
+    rep["Reporters<br/>one per beat · pitch"] --> ed["Editor<br/>one per office · rundown"] --> prod["Producer<br/>native-language copy"] --> gk{{"Gatekeeper<br/>approves every segment"}}
+  end
+  subgraph air["On air"]
+    direction LR
+    tv1["Lobby TV · Tokyo<br/>Japanese"] ~~~ tv2["Lobby TV · Cambridge<br/>English"]
+  end
+  op["Human operator<br/>override queue · kill switch"]
+  sources --> crew --> air
+  op -.-> crew
+  op -.-> air

@@ -1,13 +1,14 @@
-flowchart LR
-  sources["Source docs<br/>customer history · findings"]
-  ingest["Ingest"]
-  kg[("Temporal knowledge graph")]
-  probes["Quality probes<br/>factual · relational · negative"]
-  score["ConfidenceReport"]
-  rbac["Per-tool RBAC"]
-  consumers["Agents / analysts / UIs"]
-  sources --> ingest --> kg
-  kg --> probes --> score
-  consumers -.governed by.-> rbac
-  rbac --> kg
-  score -.gates.-> consumers
+flowchart TB
+  subgraph ingestrow["Ingest"]
+    direction LR
+    sources["Source docs<br/>customer history · findings"] --> ingest["Extract entities<br/>& relationships"] --> kg[("Temporal<br/>knowledge graph")]
+  end
+  subgraph quality["Score"]
+    direction LR
+    probes["Quality probes<br/>factual · relational · negative"] --> score["Per-topic<br/>confidence score"]
+  end
+  subgraph use["Use"]
+    direction LR
+    rbac{{"Per-tool RBAC<br/>read · ingest · evaluate"}} --> consumers["Agents · analysts · UIs<br/>refuse low-confidence topics"]
+  end
+  ingestrow --> quality --> use
